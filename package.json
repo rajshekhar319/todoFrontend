@@ -29,3 +29,10 @@
     "not op_mini all"
   ]
 }
+
+
+{
+  "routes": {
+    "/**": "index.html"
+  }
+}

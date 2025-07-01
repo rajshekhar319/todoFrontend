@@ -33,7 +33,7 @@ export default function Login({ setToken }) {
 
   return (
     <div className="max-w-md mx-auto mt-16 p-8 bg-orange-50 rounded-lg border border-orange-200">
-      <h2 className="text-3xl font-extrabold mb-6 text-center text-orange-600">
+      <h2 className="text-3xl font-extrabold mb-6 text-center text-emerald-600">
         Login
       </h2>
       {authError && (

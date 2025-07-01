@@ -33,7 +33,7 @@ function Signup() {
 
   return (
     <div className="max-w-md mx-auto mt-16 p-8 bg-orange-50 rounded-xl shadow-lg border border-orange-200">
-      <h2 className="text-3xl font-extrabold mb-6 text-center text-orange-600">
+      <h2 className="text-3xl font-extrabold mb-6 text-center text-green-600">
         Sign Up
       </h2>
       {authError && (
@@ -56,19 +56,19 @@ function Signup() {
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="p-3 border-2 border-orange-300 rounded w-full mb-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="p-3 border-2 border-blue-300 rounded w-full mb-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
           placeholder="Username"
         />
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="p-3 border-2 border-orange-300 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-orange-400"
+          className="p-3 border-2 border-green-300 rounded w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-400"
           placeholder="Password"
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded w-full transition-colors duration-200"
+          className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded w-full transition-colors duration-200"
           disabled={authLoading}
         >
           {authLoading ? "Signing up..." : "Sign Up"}
@@ -78,7 +78,7 @@ function Signup() {
         <span className="text-gray-700">Already have an account? </span>
         <Link
           to="/login"
-          className="text-orange-600 hover:underline font-semibold"
+          className="text-green-600 hover:underline font-semibold"
         >
           Login
         </Link>

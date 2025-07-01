@@ -102,13 +102,13 @@ function App() {
 
   // Main app UI for authenticated users
   const MainApp = () => (
-    <div className="min-h-screen bg-orange-50 flex flex-col">
-      <nav className="bg-orange-500 text-white px-6 py-4 flex justify-between items-center shadow-md">
+    <div className="min-h-screen bg-green-50 flex flex-col">
+      <nav className="bg-green-500 text-white px-6 py-4 flex justify-between items-center shadow-md">
         <ul className="flex space-x-4">
           <li>
             <a
               href="#"
-              className="px-4 py-2 rounded-full font-semibold transition-colors duration-200 hover:bg-orange-600 hover:text-white focus:bg-orange-700 focus:outline-none bg-orange-100 text-orange-700 shadow-sm"
+              className="px-4 py-2 rounded-full font-semibold transition-colors duration-200 hover:bg-green-600 hover:text-white focus:bg-orange-700 focus:outline-none bg-orange-100 text-orange-700 shadow-sm"
             >
               Home
             </a>
@@ -135,12 +135,12 @@ function App() {
         >
           <input
             type="text"
-            className="p-3 border-2 border-orange-300 rounded-lg w-2/3 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="p-3 border-2 border-blue-300 rounded-lg w-2/3 focus:outline-none focus:ring-2 focus:ring-blue-400"
             placeholder="Add a task"
           />
           <button
             type="submit"
-            className="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200"
+            className="px-6 py-2 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg transition-colors duration-200"
           >
             Add
           </button>
@@ -184,7 +184,7 @@ function App() {
                   className={`px-3 py-1 rounded-full font-semibold transition-colors duration-200 ${
                     task.status === "pending"
                       ? "bg-yellow-400 text-yellow-900 hover:bg-yellow-500"
-                      : "bg-green-400 text-green-900 hover:bg-green-500"
+                      : "bg-blue-400 text-blue-900 hover:bg-blue-500"
                   }`}
                 >
                   {task.status === "pending" ? "Mark Complete" : "Mark Pending"}
@@ -210,7 +210,7 @@ function App() {
           ))}
         </ul>
       </main>
-      <footer className="bg-orange-500 text-white p-4 mt-auto text-center shadow-inner">
+      <footer className="bg-green-500 text-white p-4 mt-auto text-center shadow-inner">
         © 2025 Your To-Do App
       </footer>
     </div>
